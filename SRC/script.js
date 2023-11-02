@@ -36,6 +36,27 @@ function moverBola() {
     
     bola.posicionBolaEjeX += bola.velocidadX;
     bola.posicionBolaEjeY += bola.velocidadY;
+<<<<<<< Updated upstream:SRC/script.js
+=======
+
+    if (bola.posicionBolaEjeX + 10 == WIDTH) {
+        bola.posicionBolaEjeX = 400;
+        bola.posicionBolaEjeY = 250;
+        bola.velocidadX = -5;
+        bola.velocidadY = -5;
+    }
+
+    if (bola.posicionBolaEjeX - 10 == 0){
+        bola.posicionBolaEjeX = 400;
+        bola.posicionBolaEjeY = 250;
+        bola.velocidadX = 5;
+        bola.velocidadY = 5;
+    }
+
+    if (bola.posicionBolaEjeY + 10 == HEIGHT || bola.posicionBolaEjeY - 10 == 0) {
+        bola.velocidadY = -bola.velocidadY;
+    }
+>>>>>>> Stashed changes:Raúl Rebote de la Bola/index.js
     
     requestAnimationFrame(moverBola);
 }
@@ -44,6 +65,7 @@ function moverBola() {
 function pintarRectanguloCanvas(){
     context.fillStyle = "black";
     context.fillRect(0, 0, WIDTH, HEIGHT);
+<<<<<<< Updated upstream:SRC/script.js
 }
 
 
@@ -58,3 +80,6 @@ function pintarRectanguloCanvas(){
 
 
 
+=======
+}
+>>>>>>> Stashed changes:Raúl Rebote de la Bola/index.js
